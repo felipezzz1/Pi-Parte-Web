@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>Le, escreve, altera e exclui</title>
+    <link rel="stylesheet" href="CSS/stylealter.css">
+</head>
+
+<body>
+    <div id="container">
+
+        <div id="title_container">
+            <h2 id="sub_header"> Firebase db </h2>
+        </div>
+
+        <div id="form_container">
+            <input placeholder="User Id" type="text" id="uid">
+            <input placeholder="Email" type="email" id="email">
+            <input placeholder="Name" type="latin-name" id="name">
+            <input placeholder="Cep" type="text" inputmode="numeric" id="cep" maxlength="8">
+            <input placeholder="Cpf" type="text" inputmode="numeric" id="cpf" maxlength="11" >
+            <input placeholder="Telefone" type="text" inputmode="tel" id="number">
+        </div>
+
+        <div id="button_container">
+            <button id="submit" onclick="save()"> Enviar </button>
+            <button id="get" onclick="read()"> Ver </button>
+            <button id="update" onclick="update()"> Atualizar </button>
+            <button id="delete" onclick="removepost()"> Excluir Post </button>
+            <button id="uiddelete" onclick="removeuid()">Excluir usuário</button>
+            <button id="logout" onclick="logout()">Sair</button>
+        </div>
+    </div>
+</body>
+
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+<script src="js/alter.js"></script>
+
+</html>
