@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Login admin com firebase</title>
+    <!-- Our stylesheet -->
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+
+<body>
+    <div id="content_container">
+        <div id="form_container">
+            <div id="form_header_container">
+                <h2 id="form_header"> Login Adm CanWork </h2>
+            </div>
+
+            <div id="form_content_container">
+                <div id="form_content_inner_container">
+                    <input type="email" id="email" placeholder="Email" required>
+                    <input type="password" id="password" placeholder="Password" required>
+                    <div id="button_container">
+                        <button id="login" onclick="signInWithEmailPassword()">Entrar</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+<script src="js/index.js"></script>
+
+</html>
